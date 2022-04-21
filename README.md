@@ -1,5 +1,5 @@
 # ubuntu-boilerplate
-A script to install some necessary stuff–CUDA, Conda, etc
+Simple scripts for installing some necessary stuff–CUDA, Conda, etc
 
 Execute the script without saving it to disk
 ```
