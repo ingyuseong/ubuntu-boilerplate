@@ -6,8 +6,6 @@
 #        $ ./install_miniconda.sh ~/apps/miniconda
 #    # install and upgrade
 #        $ ./install_miniconda.sh ~/apps/miniconda --upgrade
-# execute the script without saving it to disk:
-#    $ curl -s https://gist.githubusercontent.com/mherkazandjian/cce01cf3e15c0b41c1c4321245a99096/raw/03c86dae9a212446cf5b095643854f029b39c921/miniconda_installer.sh | bash -s -- ~/miniconda
 ##################################################
 
 # the absolute path of the miniconda installer (e.g Miniconda3-latest-Linux-x86_64.sh)
@@ -26,8 +24,6 @@ else
     fi
 fi
 
-
-
 function _install_miniconda() {
 
     wget -q https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ${INSTALLER_PATH}
@@ -41,9 +37,10 @@ function _install_miniconda() {
         ${INSTALL_PREFIX}/bin/conda install -y conda-build conda-verify
     fi
 }
-echo "----------------Installing miniconda...----------------"
+echo "----------------Installing miniconda on $HOME/miniconda3...----------------"
 _install_miniconda
 echo "----------------Activating conda...----------------"
+$HOME/miniconda3/bin/conda init
 bash
 which python
 
