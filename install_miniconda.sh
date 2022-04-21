@@ -44,4 +44,5 @@ $HOME/miniconda3/bin/conda init
 bash
 source activate base
 which python
+source activate base
 
