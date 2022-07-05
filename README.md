@@ -7,5 +7,6 @@ wget -O - https://raw.githubusercontent.com/ingyuseong/ubuntu-boilerplate/main/.
 source activate base
 ```
 
+* [NVIDIA Driver](https://docs.nvidia.com/datacenter/tesla/tesla-installation-notes/index.html#introduction)
 * [CUDA](https://wooriel.tistory.com/53)
 * [Anaconda](https://dambi-ml.tistory.com/6)
