@@ -7,3 +7,5 @@ wget -O - https://raw.githubusercontent.com/ingyuseong/ubuntu-boilerplate/main/.
 source activate base
 ```
 
+* [CUDA](https://wooriel.tistory.com/53)
+* [Anaconda](https://dambi-ml.tistory.com/6)
